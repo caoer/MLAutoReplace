@@ -339,7 +339,7 @@ static MLAutoReplace *sharedPlugin;
             }
             replaceGetter = [NSString stringWithFormat:defaultReplaceGetterOfPointer,otherContent];
         }
-        replaceContent = [[NSString stringWithFormat:@"- (%@)<name>\n%@",type,replaceGetter] stringByReplacingOccurrencesOfString:@"<name>" withString:name];
+        replaceContent = [[NSString stringWithFormat:@"- (%@)<name> %@",type,replaceGetter] stringByReplacingOccurrencesOfString:@"<name>" withString:name];
     }
     
     if ([NSString IsNilOrEmpty:replaceContent]) {

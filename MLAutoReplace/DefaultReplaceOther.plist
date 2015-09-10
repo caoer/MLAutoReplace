@@ -30,8 +30,7 @@
 		<key>regex</key>
 		<string>^\s*-\s*\(\s*id\s*\)\s*init\s*//$</string>
 		<key>replaceContent</key>
-		<string>- (instancetype)init
-{
+		<string>- (instancetype)init {
     self = [super init];
     if (self) {
         &lt;#statements#&gt;
@@ -43,8 +42,7 @@
 		<key>regex</key>
 		<string>^\s*-\s*\(\s*instancetype\s*\)\s*init\s*//$</string>
 		<key>replaceContent</key>
-		<string>- (instancetype)init
-{
+		<string>- (instancetype)init {
     self = [super init];
     if (self) {
         &lt;#statements#&gt;
